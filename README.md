@@ -48,7 +48,7 @@ public static long LargestPalindromeProduct(int length) {
 ```
 This method makes several oversights and incorrect assumptions. Firstly, in the worst-case, it will calculate every product up to `10^n - 1` rather than only `n`-digit products (from `10^(n - 1)` to `10^n - 1`). This doesn't really matter, though, as the lower bound will never be reached. Still, it is lazy practice. Also, this makes the assumption that the calculated products are always decreasing. Originally, I thought this were the case. However, the products quickly overlap each cycle. Therefore, the output palindromic product may not be the largest. Shown below:
 
-![Approximation 1 Output](https://github.com/RobertDurfee/SequentialProducts/raw/master/ProductOutputApproximation1.png)
+![Approximation 1 Output](https://github.com/RobertDurfee/SequentialProducts/raw/master/Plots/ProductOutputApproximation1.png)
 
 ### Method 2
 ```Java
