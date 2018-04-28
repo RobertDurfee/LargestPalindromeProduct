@@ -88,7 +88,7 @@ public static long LargestPalindromeProduct(int length) {
 ```
 After studying the sorted output of products, I noticed that there was a distinct pattern that could be easily replicated. I think the pattern is best explained by examining the code above. This pattern works great until the 10^n product is calculated. Then the pattern falls apart and calculated products are no longer decreasing. Shown below.
 
-![Approximation 2 Output](https://github.com/RobertDurfee/SequentialProducts/raw/master/ProductOutputApproximation2.png)
+![Approximation 2 Output](https://github.com/RobertDurfee/SequentialProducts/raw/master/Plots/ProductOutputApproximation2.png)
 
 The iteration maximum was determined by realizing that the number of products is a permutation of `n` and 10 (the number of possible digit values) and that each iteration computes that number of products. Using the summation of constants identity, the number of iterations could be determined. This is not very important, however, as this maximum should never be reached.
 
